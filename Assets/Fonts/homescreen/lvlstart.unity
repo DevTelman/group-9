@@ -157,7 +157,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1.5, z: 1}
+  m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &6602373
 MeshRenderer:
@@ -836,7 +836,7 @@ Transform:
   m_GameObject: {fileID: 1188749289}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.997594, z: -0, w: 0.0693272}
-  m_LocalPosition: {x: 171, y: -305, z: -113}
+  m_LocalPosition: {x: 171, y: -336, z: -113}
   m_LocalScale: {x: 65.07347, y: 65.07347, z: 65.07347}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -925,7 +925,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ec073926f3fc2b4d97e6e51f2f8145e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::markwalking
-  moveSpeed: 5
+  moveSpeed: 400
 --- !u!1 &1747017232
 GameObject:
   m_ObjectHideFlags: 0
@@ -937,6 +937,7 @@ GameObject:
   - component: {fileID: 1747017235}
   - component: {fileID: 1747017234}
   - component: {fileID: 1747017233}
+  - component: {fileID: 1747017236}
   m_Layer: 0
   m_Name: fear animal 2
   m_TagString: Untagged
@@ -1033,12 +1034,28 @@ Transform:
   m_GameObject: {fileID: 1747017232}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.000015258789, y: 0.000061035156, z: -129}
+  m_LocalPosition: {x: -0.000030517578, y: 0.000061035156, z: -129}
   m_LocalScale: {x: 24.588308, y: 24.588308, z: 24.588308}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1747017236
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1747017232}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3e6241d89465da4a9e6e8ca281a5efd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::batfollow
+  player: {fileID: 1188749291}
+  followSpeed: 350
+  stopDistance: 300
+  offset: {x: 0, y: 240, z: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -1047,5 +1064,5 @@ SceneRoots:
   - {fileID: 872107372}
   - {fileID: 6602375}
   - {fileID: 1188749291}
-  - {fileID: 909351376}
   - {fileID: 1747017235}
+  - {fileID: 909351376}
