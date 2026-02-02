@@ -1,3 +1,4 @@
+using System.Runtime.CompilerServices;
 using UnityEngine;
 
 public class batfollow : MonoBehaviour
@@ -5,31 +6,36 @@ public class batfollow : MonoBehaviour
     public Transform player;
     public float followSpeed ;
     public float stopDistance ;
-    public Vector3 offset = new Vector3(0,10f,0);
+    private SpriteRenderer sprite;
+    public Vector3 offset = new Vector3(0,80f,0);
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+      sprite =  GetComponent<SpriteRenderer>(); 
     }
 
     // Update is called once per frame
-    void Update()
+    void LateUpdate()
     {
         Vector3 targetPosition = player.position + offset;
-        float distance = Vector3.Distance(transform.position,player.position);
-        if (distance >stopDistance)
+        float distance = Vector3.Distance(transform.position,targetPosition);
+        if (distance > 20f)
         {
             transform.position = Vector3.MoveTowards(transform.position,targetPosition,followSpeed *Time.deltaTime);
 
         }
-        if ( player.position.x<transform.position.x)
+        float xDifference = player.position.x - transform.position.x;
+        float moveInput = Input.GetAxis("Horizontal");
+        if (moveInput < 0)
         {
             GetComponent<SpriteRenderer>().flipX = true;
         }
-        else
+        else if (moveInput > 0)
         {
-            GetComponent<SpriteRenderer>().flipX = false;
+             GetComponent<SpriteRenderer>().flipX = false;
         }
-
+            
+        
+       
     }
 }
