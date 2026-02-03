@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: "Assets/Animations/\u0446\u0443\u0442\u0449\u0435\u043D\u0435.unity"
     guid: cdbea27a414ac7b4ba4e24db845aee58
   - enabled: 1
+    path: Assets/Fonts/homescreen/cutscene2.unity
+    guid: fd9890e3252a4244692067590284c51b
+  - enabled: 1
     path: Assets/Fonts/homescreen/lvlstart.unity
     guid: d192bed750c3ce24a95c8c0ed11014a0
   m_configObjects:
