@@ -313,7 +313,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 1, y: 0.8, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &629645973
 MeshRenderer:
@@ -381,7 +381,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 265.97357, y: 17, z: -23}
-  m_LocalScale: {x: 9716.342, y: 42.77978, z: 64.70442}
+  m_LocalScale: {x: 9716.342, y: 42.77978, z: 242.63512}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -766,8 +766,8 @@ Transform:
   m_GameObject: {fileID: 1140707248}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.99923974, z: -0, w: 0.038986545}
-  m_LocalPosition: {x: 94.20988, y: 161, z: 0}
-  m_LocalScale: {x: 6.635145, y: 6.635145, z: 6.635145}
+  m_LocalPosition: {x: 69, y: 103, z: -125}
+  m_LocalScale: {x: 3.530178, y: 3.377625, z: 4.791936}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1461153828}
@@ -781,7 +781,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1140707248}
   serializedVersion: 5
-  m_Mass: 1
+  m_Mass: 0.5
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -797,9 +797,9 @@ Rigidbody:
   m_ImplicitTensor: 1
   m_UseGravity: 1
   m_IsKinematic: 0
-  m_Interpolate: 0
+  m_Interpolate: 1
   m_Constraints: 120
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!65 &1140707253
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -819,7 +819,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 20.000002, y: 39.999996, z: 0.20000018}
+  m_Size: {x: 20.000002, y: 40, z: 0.20000018}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &1140707254
 MonoBehaviour:
@@ -833,7 +833,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 621ec53160b12154190fb08e86a4b18d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Malunawalking
-  moveSpeed: 100
+  moveSpeed: 200
 --- !u!1 &1193721254
 GameObject:
   m_ObjectHideFlags: 0
@@ -1584,7 +1584,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -5
   m_Sprite: {fileID: 21300000, guid: 1c4d583d2c6274847bd9f7fc3e1934dc, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.2924528, g: 0.2924528, b: 0.2924528, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -2090,7 +2090,7 @@ Transform:
   m_GameObject: {fileID: 1885984141}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 262, y: 224, z: 0}
+  m_LocalPosition: {x: 260, y: 224, z: 0}
   m_LocalScale: {x: 14.998827, y: 14.998827, z: 14.998827}
   m_ConstrainProportionsScale: 0
   m_Children: []
