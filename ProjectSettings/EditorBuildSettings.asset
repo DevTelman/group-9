@@ -9,16 +9,16 @@ EditorBuildSettings:
     path: Assets/Scenes/homescreen.unity
     guid: 99c9720ab356a0642a771bea13969a05
   - enabled: 1
-    path: "Assets/Animations/\u0446\u0443\u0442\u0449\u0435\u043D\u0435.unity"
+    path: Assets/Animations/cutscene.unity
     guid: cdbea27a414ac7b4ba4e24db845aee58
   - enabled: 0
     path: Assets/Fonts/homescreen/lcutscene2/cutscene 2.unity
     guid: 52903ce5016c3c247a3861d311683a65
   - enabled: 1
-    path: Assets/Fonts/homescreen/lvlstart.unity
+    path: Assets/Fonts/homescreen/Mark.unity
     guid: d192bed750c3ce24a95c8c0ed11014a0
   - enabled: 1
-    path: Assets/Fonts/homescreen/Makunalvl1.unity
+    path: Assets/Fonts/homescreen/Maluna.unity
     guid: 8b6133bcde9679c4691fc622b8332354
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
