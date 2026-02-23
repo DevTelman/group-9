@@ -4,7 +4,9 @@ public class GearSocket : MonoBehaviour
 {
     public Gear leftGear;
     public Gear rightGear;
+    private AudioSource gearSound;
     private void OnTriggerEnter2D(Collider2D other)
+    
     {
         if (other.CompareTag("MiddleGear"))
         {
@@ -15,8 +17,14 @@ public class GearSocket : MonoBehaviour
                 middleGear.isLocked = true;
                 middleGear.isRotating = true;
                 rightGear.isRotating = true;
+                leftGear.isRotating = true;
                 middleGear.isClockwise = !leftGear.isClockwise;
                 Debug.Log("Gears Connected");
+                if (gearSound!= null )
+                {
+                    gearSound.Play();
+                }
+               
             }
         }
     
@@ -25,7 +33,7 @@ public class GearSocket : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        gearSound = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
