@@ -12,4 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9e88f8bf2827d94f882313335c5d094, type: 3}
   m_Name: NewDialogue
   m_EditorClassIdentifier: Assembly-CSharp::DialogueData
-  lines: []
+  lines:
+  - characterName: Mark
+    characterEmote: {fileID: 21300000, guid: 8918ec53b36be8d40b15ff0cf39f4f83, type: 3}
+    text: It was a long trip,but we finally made it
+  - characterName: Warden
+    characterEmote: {fileID: 21300000, guid: f6dc153f366383844a9855fd6aba07d8, type: 3}
+    text: Greetings,child
+  - characterName: Warden
+    characterEmote: {fileID: 21300000, guid: f6dc153f366383844a9855fd6aba07d8, type: 3}
+    text: Are you lost, child?
+  - characterName: Warden
+    characterEmote: {fileID: 21300000, guid: 11f4f1e32987ea94e905c10b373b0c07, type: 3}
+    text: Dont be frightened, I mean no harm
