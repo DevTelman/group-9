@@ -13,6 +13,8 @@ public class DialogueManager : MonoBehaviour
     private int index;
     private DialogueData currentDialogue;
     private bool isTyping;
+    public WardenStandalone warden;
+   
     void Awake()
     {
         Instance = this;
@@ -61,7 +63,15 @@ public class DialogueManager : MonoBehaviour
             index ++;
             StartCoroutine(TypeLine());
         }
-        else {dialoguePanel.SetActive(false);}
+        else
+        {
+            dialoguePanel.SetActive(false);
+            if(warden != null)
+            {
+                warden.StartWardenSequence();
+            }
+        }
+       
     }
 }
 
