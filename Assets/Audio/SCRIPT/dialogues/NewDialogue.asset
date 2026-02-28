@@ -25,3 +25,48 @@ MonoBehaviour:
   - characterName: Warden
     characterEmote: {fileID: 21300000, guid: 11f4f1e32987ea94e905c10b373b0c07, type: 3}
     text: Dont be frightened, I mean no harm
+  - characterName: Mark
+    characterEmote: {fileID: 21300000, guid: 08b7620d99209c4409c4cbfb1dea97c0, type: 3}
+    text: 'Sorry for intrusion, but my town''s air is polluted '
+  - characterName: Mark
+    characterEmote: {fileID: 21300000, guid: 42171a58390b6a1459c44bbf2e1ac626, type: 3}
+    text: And I need to stop it
+  - characterName: Warden
+    characterEmote: {fileID: 21300000, guid: f6dc153f366383844a9855fd6aba07d8, type: 3}
+    text: It's dangerous here.Corrupted plants and ghosts
+  - characterName: Warden
+    characterEmote: {fileID: 21300000, guid: f6dc153f366383844a9855fd6aba07d8, type: 3}
+    text: You will need the help of Maluna
+  - characterName: Warden
+    characterEmote: {fileID: 21300000, guid: 251a88db53e9b6546ad9d6ae8197f512, type: 3}
+    text: echoes of pain are still heard in here
+  - characterName: Warden
+    characterEmote: {fileID: 21300000, guid: f6dc153f366383844a9855fd6aba07d8, type: 3}
+    text: You will find out what happened here soon
+  - characterName: Warden
+    characterEmote: {fileID: 21300000, guid: f6dc153f366383844a9855fd6aba07d8, type: 3}
+    text: But don't worry
+  - characterName: Warden
+    characterEmote: {fileID: 21300000, guid: 11f4f1e32987ea94e905c10b373b0c07, type: 3}
+    text: Maluna is a strong plant and kindhearted
+  - characterName: Warden
+    characterEmote: {fileID: 21300000, guid: 11f4f1e32987ea94e905c10b373b0c07, type: 3}
+    text: She will be your eyes on lower levels
+  - characterName: Mark
+    characterEmote: {fileID: 21300000, guid: 08b7620d99209c4409c4cbfb1dea97c0, type: 3}
+    text: 'I am sorry to hear that '
+  - characterName: Mark
+    characterEmote: {fileID: 21300000, guid: 8918ec53b36be8d40b15ff0cf39f4f83, type: 3}
+    text: Don't worry
+  - characterName: Mark
+    characterEmote: {fileID: 21300000, guid: 61e320bc99f07d5468f8ff6290a3cca0, type: 3}
+    text: I will stop the pollution
+  - characterName: Mark
+    characterEmote: {fileID: 21300000, guid: 42171a58390b6a1459c44bbf2e1ac626, type: 3}
+    text: and free the plants
+  - characterName: Warden
+    characterEmote: {fileID: 21300000, guid: f6dc153f366383844a9855fd6aba07d8, type: 3}
+    text: Go to the right and open the scattered gears
+  - characterName: Warden
+    characterEmote: {fileID: 21300000, guid: 11f4f1e32987ea94e905c10b373b0c07, type: 3}
+    text: Goodbye my friend
