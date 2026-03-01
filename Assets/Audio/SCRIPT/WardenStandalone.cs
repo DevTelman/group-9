@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class WardenStandalone : MonoBehaviour
 {
+    public static bool hasBeenDestroyed = false;
     public Animator wardenAnimator;
     public AudioSource footstepsAudio;
     public float walkSpeed = 3f;
@@ -25,12 +26,20 @@ public class WardenStandalone : MonoBehaviour
     public void DestroyWarden()
     {
         Destroy(gameObject);
+       hasBeenDestroyed = true;
     }
     public void StartWardenSequence()
     {
         if (wardenAnimator != null)
         {
             wardenAnimator.SetBool("isWalking" ,true);
+        }
+    }
+    void Start()
+    {
+        if (hasBeenDestroyed)
+        {
+            Destroy(gameObject);
         }
     }
 }
