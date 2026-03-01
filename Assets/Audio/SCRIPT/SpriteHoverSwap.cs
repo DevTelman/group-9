@@ -25,7 +25,14 @@ public class SpriteHoverSwap : MonoBehaviour
     }
     void OnMouseDown()
     {
-        SceneManager.LoadScene(sceneToLoad);
+        if(GearSocket.isPuzzleSolved == false)
+        {
+      
+      
+        
+         SceneManager.LoadScene(sceneToLoad);
+        }
+
     }
 
         

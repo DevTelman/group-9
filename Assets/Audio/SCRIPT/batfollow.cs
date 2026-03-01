@@ -8,6 +8,7 @@ public class batfollow : MonoBehaviour
     public float stopDistance ;
     private SpriteRenderer sprite;
     public Vector3 offset = new Vector3(0,80f,0);
+    
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -15,27 +16,27 @@ public class batfollow : MonoBehaviour
     }
 
     // Update is called once per frame
-    void LateUpdate()
+    void FixedUpdate()
     {
-        Vector3 targetPosition = player.position + offset;
+        if(player == null)return;
+        Vector3 targetPosition = player.position +offset;
         float distance = Vector3.Distance(transform.position,targetPosition);
-        if (distance > 20f)
+        if(distance > stopDistance)
         {
-            transform.position = Vector3.MoveTowards(transform.position,targetPosition,followSpeed *Time.deltaTime);
-
+            transform.position = Vector3.Lerp(transform.position,targetPosition,followSpeed *Time.fixedDeltaTime);
         }
         float xDifference = player.position.x - transform.position.x;
-        float moveInput = Input.GetAxis("Horizontal");
-        if (moveInput < 0)
+        if(xDifference < 0)
         {
-            GetComponent<SpriteRenderer>().flipX = true;
+            sprite.flipX = true;
         }
-        else if (moveInput > 0)
+        else if (xDifference > 0)
         {
-             GetComponent<SpriteRenderer>().flipX = false;
+            sprite.flipX = false;
         }
+    }
             
         
        
-    }
+    
 }

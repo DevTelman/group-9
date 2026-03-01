@@ -14,17 +14,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogueData
   lines:
   - characterName: Tree soul
-    characterEmote: {fileID: 21300000, guid: c32b6418be73ff648b774e670866d435, type: 3}
+    characterEmote: {fileID: 21300000, guid: 13f9b420960cfad43aea6b1b76c698ee, type: 3}
     text: I can feel the presence of a new soul
   - characterName: Tree soul
-    characterEmote: {fileID: 21300000, guid: c32b6418be73ff648b774e670866d435, type: 3}
+    characterEmote: {fileID: 21300000, guid: 13f9b420960cfad43aea6b1b76c698ee, type: 3}
     text: Why are you here, child?
   - characterName: Mark
     characterEmote: {fileID: 21300000, guid: 08b7620d99209c4409c4cbfb1dea97c0, type: 3}
     text: I want to stop the pollution andsave the humankind
   - characterName: Tree soul
-    characterEmote: {fileID: 21300000, guid: c32b6418be73ff648b774e670866d435, type: 3}
+    characterEmote: {fileID: 21300000, guid: 13f9b420960cfad43aea6b1b76c698ee, type: 3}
     text: Well then, you need to watch the tape on TV
   - characterName: Tree soul
-    characterEmote: {fileID: 21300000, guid: c32b6418be73ff648b774e670866d435, type: 3}
+    characterEmote: {fileID: 21300000, guid: 13f9b420960cfad43aea6b1b76c698ee, type: 3}
     text: so you can learn the story of this building

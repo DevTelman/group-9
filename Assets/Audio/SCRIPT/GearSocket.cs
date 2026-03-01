@@ -5,7 +5,10 @@ public class GearSocket : MonoBehaviour
     public Gear leftGear;
     public Gear rightGear;
     private AudioSource gearSound;
+    public static bool isPuzzleSolved = false;
+    public GameObject finishButton;
     private void OnTriggerEnter2D(Collider2D other)
+    
     
     {
         if (other.CompareTag("MiddleGear"))
@@ -15,6 +18,8 @@ public class GearSocket : MonoBehaviour
             {
                 other.transform.position = transform.position;
                 middleGear.isLocked = true;
+                isPuzzleSolved = true;
+                ApplySolvedState();
                 middleGear.isRotating = true;
                 rightGear.isRotating = true;
                 leftGear.isRotating = true;
@@ -24,6 +29,7 @@ public class GearSocket : MonoBehaviour
                 {
                     gearSound.Play();
                 }
+                
                
             }
         }
@@ -34,6 +40,18 @@ public class GearSocket : MonoBehaviour
     void Start()
     {
         gearSound = GetComponent<AudioSource>();
+        if (finishButton != null) finishButton.SetActive(false);
+        if (isPuzzleSolved)
+        {
+            ApplySolvedState();
+        }
+        
+            
+        
+    }
+    void ApplySolvedState()
+    {
+        if(finishButton!= null)finishButton.SetActive(true);
     }
 
     // Update is called once per frame

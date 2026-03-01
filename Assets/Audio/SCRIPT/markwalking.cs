@@ -3,14 +3,14 @@ using UnityEngine;
 public class markwalking : MonoBehaviour
 {
     public float moveSpeed ;
-    private Rigidbody rb;
+    private Rigidbody2D rb;
     private Animator anim;
 
     private SpriteRenderer spriteRenderer;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        rb = GetComponent<Rigidbody>();
+        rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
     }
