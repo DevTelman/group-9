@@ -6,7 +6,7 @@ public class Gear : MonoBehaviour
     public float rotationSpeed = 150f;
     public bool isClockwise = true;
     public bool isRotating = false;
-    public bool isLocked = false;
+    public  bool isLocked = false;
     private Vector3 offset;
     private Camera mainCam;
 

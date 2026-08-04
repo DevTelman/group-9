@@ -18,7 +18,9 @@ public class DialogueManager : MonoBehaviour
     void Awake()
     {
         Instance = this;
-        if(dialoguePanel != null)dialoguePanel.SetActive(false);
+        if (dialoguePanel != null)dialoguePanel.SetActive(false);
+       
+       
     }
     public void StartDialogue(DialogueData data)
     {

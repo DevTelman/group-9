@@ -69,4 +69,7 @@ MonoBehaviour:
     text: Go to the right and open the scattered gears
   - characterName: Warden
     characterEmote: {fileID: 21300000, guid: 11f4f1e32987ea94e905c10b373b0c07, type: 3}
+    text: after the dialogue press TAB to connect with Maluna
+  - characterName: Warden
+    characterEmote: {fileID: 21300000, guid: 11f4f1e32987ea94e905c10b373b0c07, type: 3}
     text: Goodbye my friend

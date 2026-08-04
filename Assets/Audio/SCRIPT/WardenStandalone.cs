@@ -6,7 +6,7 @@ public class WardenStandalone : MonoBehaviour
     public Animator wardenAnimator;
     public AudioSource footstepsAudio;
     public float walkSpeed = 3f;
-    private bool isWalking = false;
+    public static bool isWalking = false;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
    
     void Update()
@@ -26,13 +26,14 @@ public class WardenStandalone : MonoBehaviour
     public void DestroyWarden()
     {
         Destroy(gameObject);
-       hasBeenDestroyed = true;
+       
     }
     public void StartWardenSequence()
     {
         if (wardenAnimator != null)
         {
             wardenAnimator.SetBool("isWalking" ,true);
+            hasBeenDestroyed = true;
         }
     }
     void Start()

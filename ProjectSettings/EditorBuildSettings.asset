@@ -26,6 +26,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_Recovery/puzzle1.unity
     guid: 62523e2295539e3499ccdbb747d20a08
+  - enabled: 1
+    path: Assets/Fonts/homescreen/pipe.unity
+    guid: 1880cac3b538be944bf711c37aa3383e
+  - enabled: 1
+    path: Assets/ending.unity
+    guid: ed423fcc906dbd040b4c8a6dc18b4a47
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0

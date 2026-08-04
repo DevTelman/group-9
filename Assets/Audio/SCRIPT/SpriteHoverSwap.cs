@@ -4,6 +4,7 @@ using UnityEngine.SceneManagement;
 public class SpriteHoverSwap : MonoBehaviour
 {
     public Sprite defaultSprite;
+    public int point = 0;
     public Sprite glowingSprite;
     private SpriteRenderer spriteRenderer;
     public string sceneToLoad = "puzzle1";
@@ -25,6 +26,8 @@ public class SpriteHoverSwap : MonoBehaviour
     }
     void OnMouseDown()
     {
+        point =1;
+
         if(GearSocket.isPuzzleSolved == false)
         {
       

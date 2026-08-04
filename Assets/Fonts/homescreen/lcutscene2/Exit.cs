@@ -3,6 +3,7 @@ using UnityEngine.SceneManagement;
 
 public class Exit : MonoBehaviour
 {
+    
     public string sceneToLoad ="Mark";
     void OnMouseDown()
     {
